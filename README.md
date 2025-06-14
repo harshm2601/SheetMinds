@@ -33,14 +33,13 @@
 
 ### 1. Clone the Repository
 ```bash
-git clone <your-repo-url>
-cd <project-folder>
+git clone https://github.com/harshm2601/SheetMinds.git
+cd SheetMinds
 ```
 
 ### 2. Install Dependencies
 Navigate to the `app` directory and install the required Python packages:
 ```bash
-cd app
 pip install -r requirements.txt
 ```
 
@@ -61,7 +60,7 @@ app/
   llm.py            # Handles LLM API calls and code extraction
   sandbox.py        # Securely executes generated code
   utils.py          # Utility functions for file handling and data overview
-  requirements.txt  # Python dependencies
+requirements.txt  # Python dependencies
 ```
 
 ---
