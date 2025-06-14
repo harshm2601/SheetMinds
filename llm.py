@@ -46,8 +46,9 @@ User Query: {context['query']}
                 "data": b64img
             }
         })
+    GOOGLE_API_KEY = YOUR_API_KEY
     response = requests.post(
-        "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=AIzaSyCYGDdyoQPKO_seoOObn03PWm9OsEqVDsA",
+        f"https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key={GOOGLE_API_KEY}",
         json={"contents": [{"parts": parts}]},
         timeout=30
     )
